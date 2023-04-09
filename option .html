@@ -1,0 +1,33 @@
+// options.html
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Replacer Options</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Word Replacer Options</h1>
+    <form id="options-form">
+      <label>
+        Word to replace:
+        <input type="text" name="from" required>
+      </label>
+      <label>
+        Replacement word:
+        <input type="text" name="to" required>
+      </label>
+      <button type="submit">Add</button>
+    </form>
+    <h2>Words to replace:</h2>
+    <ul id="words-list"></ul>
+    <button id="save-button">Save Changes</button>
+
+    <script src="options.js"></script>
+  </body>
+</html>
